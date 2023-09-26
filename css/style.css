@@ -1,0 +1,380 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.maximum-width {
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #00cad1;
+    width: 100%;    
+}
+
+#topo {
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;    
+}
+
+.logo {
+    width: 150px;
+}
+
+.link-list {
+    display: flex;
+    align-items: center;    
+    padding: 10px;
+    gap: 20px;    
+}
+
+.link-list li {
+    list-style: none;
+    font-size: 18px;    
+}
+
+.link-list li a {
+    text-decoration: none;
+    font-weight: 500;
+    color: #ffffff;
+    transition: .4s;
+}
+
+.link-list li a:hover {
+    color: #696969;
+}
+
+.container-banner {
+    height: 94vh;    
+    background-image: url(../assets/recepcao.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    display: flex;
+    align-items: center;
+}
+
+.title-container h1 {
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: 400;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px #000000;    
+}
+
+.title-about-container {    
+    width: 550px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h2 {
+    font-size: 24px;
+    color: #818181;
+    margin-top: 30px;
+    padding: 10px 0;
+}
+
+p {
+    color: #949494;
+    padding: 10px 0;
+}
+
+.divider {
+    width: 100%;
+    border: 1px solid #949494;
+    margin-top: 20px;
+}
+
+.clinical-description-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.clinical-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.clinical-description h3 {
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    color: #949494;
+}
+
+.list-description {
+    color: #818181;
+    line-height: 26px;
+    margin: 20px 0 0 68px;
+}
+
+#specialties-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.specialties-container {    
+    width: 550px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h4 {
+    font-size: 18px;
+    color: #818181;
+}
+
+.container-images {
+    display: flex;
+    gap: 40px;
+    margin-top: 30px;
+}
+
+.card-images {
+    width: 300px;    
+    box-shadow: 0px 0px 8px 2px #949494;
+    transition: .4s;
+    cursor: pointer;
+}
+
+.card-images:hover {
+    transform: scale(1.04);
+}
+
+.card-images img {
+    width: 100%;
+}
+
+.caption-card {
+    font-size: 18px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #818181;
+    padding: 8px 0;
+}
+
+.link-time {
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #00cad1;
+    margin-top: 30px;
+    padding: 8px 16px;    
+    transition: .3s;
+}
+
+.link-time:hover {
+    background-color: #03a5aa;
+}
+
+#section-contacts {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+.contacts-info {
+    width: 600px;    
+    text-align: center;
+    margin-top: 30px;
+}
+
+.contacts-info span {
+    font-weight: bold;
+    color: #818181;
+}
+
+.iframe-container {
+    width: 100%;
+    height: 400px;
+}
+
+footer {
+    background-color: #03a5aa;
+    width: 100%;
+}
+
+.footer-container {
+    text-align: center;
+    padding: 20px 0;    
+}
+
+.footer-container p {
+    color: #ffffff;
+}
+
+/* Resolução 769px até 1024px */
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .container-banner {        
+        height: 400px;        
+        background-attachment: scroll;
+    }
+    
+    .title-container {
+        width: 96%;
+    }
+
+    .container-images {
+        width: 96%;
+    }
+
+    .iframe-container {
+        width: 96%;        
+    }
+}
+
+/* Resolução de 451px até 768px*/
+
+@media (min-width: 451px) and (max-width: 768px) {
+    .container-banner {        
+        height: 300px;        
+        background-attachment: scroll;
+    }
+
+    .title-container {
+        width: 96%;
+    }
+
+    .clinical-description-container img {
+        display: none;
+    }
+
+    .title-about-container {
+        width:96%;
+    }
+
+
+    .specialties-container {
+        width: 96%;
+    }
+
+    .contacts-info {
+        width: 96%;
+    }
+    
+    .container-images {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .iframe-container {
+        width: 96%;        
+    }
+}
+
+/* Resolução até 450px */
+
+@media (max-width: 450px) {    
+    #topo {
+        height: 150px;
+        display: flex;
+        flex-direction: column;        
+    }
+
+    .navigation-menu {
+        width: 100%;
+        border-top: 1px solid #949494;   
+    }
+
+    .link-list {
+        display: flex;
+        justify-content: space-around;  
+    }
+
+    .link-list li {
+        text-transform: uppercase;
+        padding-top: 10px;
+        margin: 0;
+    }
+
+    .container-banner {
+        width: 100%;
+        height: 200px;        
+        background-attachment: scroll;
+    }
+
+    .title-container {
+        width: 96%;
+    }
+
+    .title-container h1 {
+        font-size: 30px;
+    }
+
+    .title-about-container {
+        width: 100%;
+    }
+
+    .clinical-description-container {
+        width: 100%;
+    }
+
+    .clinical-description-container img {
+        display: none;
+    }
+
+    .clinical-description {        
+        width: 100%;
+        display: flex;
+    }    
+
+    .specialties-container {
+        width: 96%;
+    }
+
+    .container-images {        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card-images {
+        width: 90%;
+    }
+
+    .contacts-info {
+        width: 90%;
+    }
+
+    .iframe-container {
+        width: 96%;        
+    }
+
+    .footer-container {
+        width: 100%;
+    }
+}
