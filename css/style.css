@@ -61,7 +61,7 @@ header {
 
 .container-banner {
     height: 94vh;    
-    background-image: url(../assets/recepcao.png);
+    background-image: url("../assets/recepcao.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
