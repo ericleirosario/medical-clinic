@@ -6,8 +6,8 @@
 <br>
 
 <div align=center>  
-    <img width=186px heigth=auto src="" alt="CMLife Mobile"/>
-    <img width=635px heigth=auto src="" alt="CMLife Desktop"/>  
+    <img width=186px heigth=auto src="https://github.com/ericleirosario/medical-clinic/blob/master/assets/medical-clinic-mobile.png?raw=true" alt="CMLife Mobile"/>
+    <img width=635px heigth=auto src="https://github.com/ericleirosario/medical-clinic/blob/master/assets/medical-clinic-desktop.png?raw=true" alt="CMLife Desktop"/>  
 </div>
 
 ## Tecnologias utilizadas
